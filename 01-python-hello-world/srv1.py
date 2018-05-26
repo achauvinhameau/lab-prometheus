@@ -1,6 +1,6 @@
 # -*- Mode: Python; python-indent-offset: 4 -*-
 #
-# Time-stamp: <2018-05-26 15:30:28 alex>
+# Time-stamp: <2018-05-26 16:13:34 alex>
 #
 # --------------------------------------------------------------------
 # lab-prometheus - basic python instrumentation for prometheus
@@ -42,7 +42,6 @@ app = Flask(__name__)
 @app.route('/now')
 def ws_now():
     """Now service to get date time on the server."""
-
     now = datetime.datetime.now()
     return make_response(jsonify({
         'epoch': now.timestamp(),

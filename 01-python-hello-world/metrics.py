@@ -1,6 +1,6 @@
 # -*- Mode: Python; python-indent-offset: 4 -*-
 #
-# Time-stamp: <2018-05-26 15:22:33 alex>
+# Time-stamp: <2018-05-26 17:26:16 alex>
 #
 # --------------------------------------------------------------------
 # lab-prometheus - metrics for prometheus
@@ -38,7 +38,8 @@ from ws_app import app
 
 PROM_METRICS = {
     "summary": {
-        "ws_srv_func_now" : Summary('ws_srv_func_now', 'stats of function now')
+        "ws_srv_func_now" : Summary('ws_srv_func_now',
+                                    'stats of function now')
     },
 
     "counter": {

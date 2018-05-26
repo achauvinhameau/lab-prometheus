@@ -1,6 +1,6 @@
 # -*- Mode: Python; python-indent-offset: 4 -*-
 #
-# Time-stamp: <2018-05-26 15:34:33 alex>
+# Time-stamp: <2018-05-26 17:13:52 alex>
 #
 # --------------------------------------------------------------------
 # lab-prometheus - basic python instrumentation for prometheus
@@ -45,7 +45,7 @@ from prometheus_client import (generate_latest,
 app = Flask(__name__)
 
 COUNTER_NOW_EVEN = Counter('ws_srv_is_now_even',
-                           'count even now aligned on second',
+                           'count even and odd calls to now aligned on second',
                            ['even'])
 
 
